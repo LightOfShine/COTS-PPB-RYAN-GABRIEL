@@ -1,100 +1,140 @@
-APLIKASI RESEP MASAKAN FLUTTER
-Deskripsi Aplikasi:
-Aplikasi mobile untuk mengelola resep masakan dengan integrasi backend Supabase. Dibuat untuk memenuhi tugas Coding On The Spot (COTS) mata kuliah Pemrograman Perangkat Bergerak.
+# 🍳 Resep Masakan - Flutter App
 
-Fitur Utama:
+<div align="center">
+  
+![Flutter](https://img.shields.io/badge/Flutter-3.0+-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.0+-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Provider](https://img.shields.io/badge/State%20Management-Provider-FF9800?style=for-the-badge)
 
-Dashboard dengan statistik resep
+**Aplikasi manajemen resep masakan dengan backend Supabase**  
+*Tugas COTS - Pemrograman Perangkat Bergerak 2025/2026*
 
-Daftar resep dengan filter kategori
+[✨ Fitur](#-fitur) • [🏗️ Struktur](#%EF%B8%8F-struktur) • [🚀 Instalasi](#-instalasi) • [📸 Screenshot](#-screenshot)
 
-Detail resep lengkap
+</div>
 
-Tambah resep baru
+## 📱 Aplikasi Resep Masakan
 
-Edit catatan resep
+Aplikasi mobile Flutter untuk mengelola resep masakan dengan integrasi real-time ke Supabase sebagai backend.
 
-Teknologi yang Digunakan:
+---
 
-Flutter 3.x
+## ✨ Fitur Utama
 
-Dart 3.x
+### 🎯 **Fitur Pengguna**
+- 📊 **Dashboard** dengan statistik resep per kategori
+- 📋 **Daftar Resep** dengan filter kategori
+- 🔍 **Detail Resep** lengkap dengan bahan & langkah
+- ➕ **Tambah Resep** baru dengan form validasi
+- ✏️ **Edit Catatan** resep secara real-time
 
-Provider (State Management)
+### ⚙️ **Fitur Teknis**
+- 🌐 **Supabase Integration** - REST API backend
+- 🏗️ **Clean Architecture** - Struktur folder terorganisir
+- 🎨 **Design System** - Konsisten warna & typography
+- 📱 **Responsive UI** - Optimal di semua device
+- 🔄 **Provider State Management** - State management modern
 
-Supabase REST API
+---
 
-HTTP Client
+## 🏗️ Struktur Project
 
-Struktur Folder:
+---
 
-main.dart - Entry point aplikasi
+## 🚀 Instalasi & Setup
 
-design_system/ - Warna, tipografi, spacing
+### Prerequisites
+- ✅ Flutter SDK >= 3.0.0
+- ✅ Dart SDK >= 3.0.0
+- ✅ IDE (VS Code / Android Studio)
+- ✅ Git
 
-models/ - Data model resep
+📸 Screenshot Aplikasi
+🏠 Dashboard
+https://via.placeholder.com/400x800/4A90E2/FFFFFF?text=Dashboard+Screen
+Statistik resep & kategori
 
-services/ - API service ke Supabase
+📋 Daftar Resep
+https://via.placeholder.com/400x800/7B68EE/FFFFFF?text=Recipe+List
+List resep dengan filter kategori
 
-controllers/ - Business logic dengan Provider
+🔍 Detail Resep
+https://via.placeholder.com/400x800/20B2AA/FFFFFF?text=Recipe+Detail
+Detail lengkap resep dengan bahan & langkah
 
-presentation/pages/ - 4 halaman utama
+➕ Tambah Resep
+https://via.placeholder.com/400x800/FF6347/FFFFFF?text=Add+Recipe
+Form input resep baru
 
-presentation/widgets/ - Komponen UI reusable
+🔧 API Endpoints
+Method	Endpoint	Deskripsi
+GET	/recipes?select=*	Ambil semua resep
+GET	/recipes?category=eq.{category}	Filter by kategori
+POST	/recipes	Tambah resep baru
+PATCH	/recipes?id=eq.{id}	Update catatan resep
+🎨 Design System
+Colors
+dart
+Primary: #1275F7
+Background: #F7F7F7
+Surface: #FFFFFF
+Text: #333333
+Danger: #E74444
+Success: #4CAF50
+Typography
+Title Large: 20px SemiBold
 
-Halaman Utama:
+Section Title: 16px SemiBold
 
-Dashboard (Beranda) - Menampilkan statistik dan resep terbaru
+Body: 14px Regular
 
-Daftar Resep - List semua resep dengan filter kategori
+Caption: 12px Regular
 
-Detail Resep - Informasi lengkap satu resep
+Button: 14px SemiBold
 
-Tambah Resep - Form input resep baru
+Spacing
+Base: 8pt grid system
 
-Persyaratan Sistem:
+Border Radius: 12px
 
-Flutter SDK versi 3.0.0 atau lebih tinggi
+Button Height: 48px
 
-Dart SDK versi 3.0.0 atau lebih tinggi
+Card Padding: 18px
 
-Koneksi internet untuk mengakses Supabase
+📁 Requirements Tugas
+✅ Yang Sudah Terpenuhi
+4 halaman utama (Dashboard, Daftar, Detail, Tambah)
 
-Cara Instalasi:
+Integrasi Supabase API
 
-Clone repository
+State Management dengan Provider
 
-Jalankan flutter pub get
-
-Jalankan flutter run
-
-API Supabase:
-
-Base URL: https://rpblbedygmnzpowbumzd.supabase.co
-
-Endpoints: GET recipes, POST recipes, PATCH recipes
-
-Fitur Teknis:
+Design system konsisten
 
 Validasi input form
 
 Error handling
 
-Loading states
+Navigasi antar halaman
 
-Refresh indicator
+Folder structure terorganisir
 
-Responsive design
+🔗 Navigasi
+Dashboard → Daftar Resep
 
-Developer:
-Ryan Gabriel Togar 
-2311104045
+Dashboard → Detail Resep
+
+Dashboard → Tambah Resep
+
+Daftar Resep → Detail Resep
+
+Daftar Resep → Tambah Resep
+
+
+👨‍💻 Developer
+Nama: Ryan Gabriel Togar Simamora
+NIM: 2311104045
 Kelas: SE-07-02
+Mata Kuliah: Pemrograman Perangkat Bergerak
 Semester: Ganjil 2025/2026
-
-Status:
-✅ Selesai sesuai requirements
-✅ Integrasi dengan Supabase
-✅ 4 halaman utama
-✅ State management dengan Provider
-✅ Design system konsisten
